@@ -1,0 +1,113 @@
+% Dummy text taken from the LaTeX lipsum package
+
+\section{Lorem ipsum dolor sit amet}
+
+\subsection{Quisque ullamcorper placerat ipsum}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices.  Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. %Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
+
+\subsection{Morbi vel justo vitae lacus tincidunt ultrices}
+
+Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. \textit{Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris.}
+
+\begin{enumerate}
+\item In hac habitasse platea dictumst;
+\item Nunc elementum fermentum wisi.
+\end{enumerate}
+
+Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus viverra fermentum felis. \textit{Donec nonummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna.}
+
+
+
+\newpage
+
+% The first maths sample is taken from Example 8-8-10 of The LaTeX Companion
+
+\section{Sample page of mathematical typesetting}
+
+First some large operators
+both in text: \( \iiint\limits_{\mathcal{Q}}
+f(x,y,z)\,dx\,dy\,dz \) and
+\(\prod_{\gamma\in\Gamma_{\widetilde{C}}}
+\partial(\widetilde{X}_\gamma)\); and also on display:
+
+\begin{equation}
+\begin{split}
+%%     This line is deliberately long so as to show
+%%     differences in widths; it is a little over the measure
+%%     in article/cmr.
+\iiiint\limits_{\symbf{Q}} f(w,x,y,z)\,dw\,dx\,dy\,dz  &\leq
+\oint_{\symbf{\partial Q}} f' \left( \max \left\lbrace
+\frac{\lVert w \rVert}{\lvert w^2 + x^2 \rvert} ;
+\frac{\lVert z \rVert}{\lvert y^2 + z^2 \rvert} ;
+\frac{\lVert w \oplus z \rVert}{\lVert x \oplus y \rVert}
+\right\rbrace\right)
+\\
+&\precapprox \biguplus_{\mathbb{Q} \Subset \bar{\symbf{Q}}}
+\left[ f^{\ast} \left(
+    \frac{\left\lmoustache\mathbb{Q}(t)\right\rmoustache}
+         {\sqrt {1 - t^2}}
+    \right)\right]_{t=\alpha}^{t=\vartheta}
+\end{split}
+\end{equation}
+
+For $x$ in the open interval \( \left] -1, 1 \right[ \)
+the infinite sum in Equation~\eqref{eq:binom1} is convergent;
+however, this does not hold
+throughout the closed interval \( \left[ -1, 1 \right] \).
+\begin{align}
+  (1 - x)^{-k} &=
+    1 + \sum_{j=1}^{\infty} (-1)^j \genfrac\lbrace\rbrace{0pt}{}{k}{j} x^j
+    \text{\quad for $k \in \mathbb{N}$; $k \neq 0$.}
+    \label{eq:binom1}
+\end{align}
+
+
+% The second maths sample is taken from the article "A Survey of Free Math Fonts for TeX and LaTeX" by Stephen G. Hartke
+
+\noindent\textbf{Theorem 1 (Residue Theorem).}
+Let $f$ be analytic in the region $G$ except for the isolated singularities $a_1,a_2,\ldots,a_m$. If $\gamma$ is a closed rectifiable curve in $G$ which does not pass through any of the points $a_k$ and if $\gamma\approx 0$ in $G$ then
+\[
+\frac{1}{2\pi i}\int_\gamma f = \sum_{k=1}^m n(\gamma;a_k) \text{Res}(f;a_k).
+\]
+
+\noindent\textbf{Theorem 2 (Maximum Modulus).}
+\emph{Let $G$ be a bounded open set in $\mathbb{C}$ and suppose that $f$ is a continuous function on $G^-$ which is analytic in $G$. Then}
+\[
+\max\{|f(z)|:z\in G^-\}=\max \{|f(z)|:z\in \partial G \}.
+\]
+
+\vspace*{20pt}
+
+\newcommand{\abc}{abcdefghijklmnopqrstuvwxyz}
+\newcommand{\ABC}{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+\newcommand{\alphabeta}{\alpha\beta\gamma\delta\epsilon\varepsilon\zeta\eta\theta\vartheta\iota\kappa\varkappa\lambda\mu\nu\xi o\pi\varpi\rho\varrho\sigma\varsigma\tau\upsilon\phi\varphi\chi\psi\omega}
+\newcommand{\AlphaBeta}{\Gamma\Delta\Theta\Lambda\Xi\Pi\Sigma\Upsilon\Phi\Psi\Omega}
+
+\small
+
+\noindent$01234567890$
+
+\noindent$\abc$
+
+\noindent$\ABC$
+
+\noindent$\alphabeta$
+
+\noindent$\AlphaBeta$
+
+\noindent$\ell\wp\aleph\infty\propto\emptyset\nabla\partial\mho\imath\jmath\hslash\eth$
+
+\noindent$\mathrm{A} \Lambda \Delta \nabla \mathrm{B C D} \Sigma \mathrm{E F} \Gamma \mathrm{G H I J K L M N O} \Theta \Omega \mho \mathrm{P} \Phi \Pi \Xi \mathrm{Q R S T U V W X Y} \Upsilon \Psi \mathrm{Z} $ % $ \quad 1234567890 $
+
+\noindent$\mathit{A \Lambda \Delta B C D E F \Gamma G H I J K L M N O \Theta \Omega P \Phi \Pi \Xi Q R S T U V W X Y \Upsilon \Psi Z }$
+
+% don't allow overfull boxes
+% {\par \tolerance=0 \emergencystretch=100em $a\alpha b \beta c \partial d \delta e \epsilon \varepsilon f \zeta \xi g \gamma h \hbar \hslash \iota i \imath j \jmath k \kappa \varkappa l \ell \lambda m n \eta \theta \vartheta o \sigma \varsigma \phi \varphi \wp p \rho \varrho q r s t \tau \pi u \mu \nu v \upsilon w \omega \varpi x \chi y \psi z$ \linebreak[3] $\infty \propto \emptyset \varnothing \mathrm{d}\eth \backepsilon$\par}
+
+\noindent$\mathbb{\ABC}$
+
+\noindent$\mathcal{\ABC}$
+
+\noindent$\symbf{\ABC}$
+

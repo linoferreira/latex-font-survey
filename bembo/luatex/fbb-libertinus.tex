@@ -1,0 +1,29 @@
+\documentclass[11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+
+\usepackage{mathtools,amsfonts,amssymb}
+\usepackage{unicode-math}
+
+% Options taken from fbb package documentation
+% http://mirrors.up.pt/pub/CTAN/fonts/fbb/doc/fbb-doc.pdf
+\setmainfont[%
+UprightFeatures = {StylisticSet=01},
+BoldFeatures = {StylisticSet=01},
+Numbers=OldStyle]{fbb}
+% AutoFakeBold option is used in math samples in documentation
+% https://github.com/alif-type/libertinus/blob/master/documentation/Math-Sample.tex
+\setmathfont[AutoFakeBold]{Libertinus Math}
+
+
+\begin{document}
+
+{\LARGE \noindent A Sample of the fbb Cardo font}\\
+
+{\large \noindent \textit{with Libertinus Math as math font}}\\[5pt]
+
+\input{../../sample-text/sample-text-luatex.tex}
+
+\end{document}
+
