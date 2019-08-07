@@ -2,19 +2,26 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
-
 \usepackage{mathtools,amsfonts,amssymb,bm}
+\usepackage{xcolor}
 
-\usepackage[p,osf]{fbb} % osf in text, tabular lining figures in math
+% Serif font: fbb (https://ctan.org/pkg/fbb) 
+\usepackage[p,osf]{fbb}
+% Math font: newtxmath with libertine option (https://www.ctan.org/pkg/newtx)
 \usepackage[libertine]{newtxmath}
 \usepackage[cal=boondoxo,bb=boondox,frak=boondox]{mathalfa}
+% Sans-serif font: Gillius ADF (http://arkandis.tuxfamily.org/adffonts.html)
+\usepackage{gillius}
+% \usepackage[scaled=.95,type1]{cabin} % cabin is the font suggested in the fbb docs
+% Monospaced font: inconsolata (https://www.ctan.org/pkg/inconsolata)
+\usepackage{inconsolata}
 
 
 \begin{document}
 
-{\LARGE \noindent A Sample of the fbb Cardo Font}\\
+{\LARGE \noindent A Sample of the fbb Font}\\
 
-{\large \noindent \textit{with Libertine from newtxmath as math font}}\\[5pt]
+{\large \noindent \textit{with Libertine-style math font from \texttt{newtxmath} and Gillius ADF}}\\[5pt]
 
 \input{../../sample-text/sample-text-pdflatex.tex}
 
