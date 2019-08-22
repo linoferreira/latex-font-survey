@@ -2,21 +2,27 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
-
 \usepackage{mathtools,amsfonts,amssymb,bm}
+\usepackage{xcolor}
 
+% Serif font: Cochineal (https://ctan.org/pkg/cochineal)
 \usepackage[p,osf]{cochineal}
+% Math font: newtxmath with cochineal option (https://www.ctan.org/pkg/newtx)
 \usepackage[cochineal,vvarbb]{newtxmath}
 \usepackage[cal=boondoxo]{mathalfa}
-
+% Sans-serif font: cabin (https://ctan.org/pkg/cabin)
+\usepackage[scale=.95,type1]{cabin}
+% Monospaced font: inconsolata (https://www.ctan.org/pkg/inconsolata)
+\usepackage{inconsolata}
 
 
 \begin{document}
 
 {\LARGE \noindent A Sample of the Cochineal Font}\\
 
-{\large \noindent \textit{with Cochineal from newtxmath as math font}}\\[5pt]
+{\large \noindent \textit{with Cochineal-style math font from \texttt{newtxmath} and Cabin}}\\[5pt]
 
 \input{../../sample-text/sample-text-pdflatex.tex}
 
 \end{document}
+

@@ -1,0 +1,29 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{mathtools,amsfonts,amssymb,bm}
+\usepackage{xcolor}
+
+% Serif font: XCharter (https://ctan.org/pkg/xcharter)
+\usepackage[scaled=.98,sups,osf]{XCharter}
+% Math font: newtxmath with charter option (https://www.ctan.org/pkg/newtx)
+\usepackage[charter,vvarbb,scaled=1.07]{newtxmath}
+\usepackage[cal=boondoxo]{mathalfa}
+% Sans-serif font: cabin (https://ctan.org/pkg/cabin)
+\usepackage[type1]{cabin}
+% Monospaced font: inconsolata (https://www.ctan.org/pkg/inconsolata)
+\usepackage[scaled=1.04]{inconsolata}% inconsolata typewriter
+\linespread{1.04} % increase line spacing
+
+
+\begin{document}
+
+{\LARGE \noindent A Sample of the XCharter Font}\\
+
+{\large \noindent \textit{with Charter-style math font from \texttt{newtxmath} and Cabin}}\\[5pt]
+
+\input{../../sample-text/sample-text-pdflatex.tex}
+
+\end{document}
+
