@@ -2,18 +2,23 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
+\usepackage{mathtools,amssymb,bm}
+\usepackage{xcolor}
 
-\usepackage{mathtools,amsfonts,amssymb,bm}
-
-\usepackage[p,osf]{newpxtext}
+% Serif font: newpxtext (https://www.ctan.org/pkg/newpx)
+% Sans-serif font: TeX Gyre Heros (http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros)
+\usepackage[osf]{newpxtext}
+% Math font: Euler-VM (https://ctan.org/pkg/eulervm)
 \usepackage{eulervm}
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
+\usepackage{inconsolata}
 
 
 \begin{document}
 
-{\LARGE \noindent A Sample of the newpxtext Font}\\
+{\LARGE \noindent A Sample of the \texttt{newpxtext} Font}\\
 
-{\large \noindent \textit{with Euler-VM as math font}}\\[5pt]
+{\large \noindent \textit{with Euler-VM and \TeX\ Gyre Heros}}\\[5pt]
 
 \input{../../sample-text/sample-text-pdflatex.tex}
 

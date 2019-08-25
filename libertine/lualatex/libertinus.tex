@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{unicode-math}
+\usepackage{xcolor}
+
+% Serif font: Libertinus Serif (https://github.com/alif-type/libertinus)
+\setmainfont[Numbers=OldStyle]{Libertinus Serif}
+% Math font: Libertinus Math
+\setmathfont[AutoFakeBold]{Libertinus Math}
+% Sans-serif font: Libertinus Sans
+\setsansfont[Numbers=OldStyle]{Libertinus Sans}
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
+\fontspec{inconsolata}
+% Display font: Libertinus Serif Display
+\newfontfamily\dispfont{Libertinus Serif Display}
+
+
+\begin{document}
+
+{\dispfont\LARGE \noindent A Sample of the Libertinus Font}\\
+
+{\large \noindent \textit{with Libertinus Math and Libertinus Sans}}\\[5pt]
+
+\input{../../sample-text/sample-text-lualatex.tex}
+
+\end{document}
+

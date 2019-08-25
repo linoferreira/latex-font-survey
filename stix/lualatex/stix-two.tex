@@ -1,0 +1,28 @@
+\documentclass[11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{unicode-math}
+\usepackage{xcolor}
+
+% Serif font: STIX Two (https://www.stixfonts.org)
+\setmainfont[Numbers=OldStyle]{STIX Two Text}
+% Math font: STIX Two Math
+\setmathfont{STIX Two Math}
+% Sans-serif font: Liberation Sans (https://github.com/liberationfonts)
+\setsansfont[Numbers=OldStyle]{Liberation Sans}
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
+\fontspec{inconsolata}
+
+
+\begin{document}
+
+{\LARGE \noindent A Sample of the STIX Two Font}\\
+
+{\large \noindent \textit{with STIX Two Math and Liberation Sans}}\\[5pt]
+
+\input{../../sample-text/sample-text-lualatex.tex}
+
+\end{document}
+

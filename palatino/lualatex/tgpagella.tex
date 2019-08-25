@@ -1,0 +1,28 @@
+\documentclass[11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{mathtools,amssymb}
+\usepackage{unicode-math}
+\usepackage{xcolor}
+
+% Serif font: TeX Gyre Pagella (http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella)
+\setmainfont[Numbers=OldStyle]{TeX Gyre Pagella}
+% Math font: TeX Gyre Pagella Math
+\setmathfont{TeX Gyre Pagella Math}
+% Sans-serif font: TeX Gyre Heros (http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros)
+\setsansfont[Numbers=OldStyle]{TeX Gyre Heros}
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
+\fontspec{inconsolata}
+
+
+\begin{document}
+
+{\LARGE \noindent A Sample of the \TeX\ Gyre Pagella Font}\\
+
+{\large \noindent \textit{with \TeX\ Gyre Pagella Math and \TeX\ Gyre Heros}}\\[5pt]
+
+\input{../../sample-text/sample-text-lualatex.tex}
+
+\end{document}
+

@@ -2,7 +2,7 @@
 
 \usepackage{fontspec}
 \usepackage{microtype}
-\usepackage{mathtools,amsfonts,amssymb}
+\usepackage{mathtools,amssymb}
 \usepackage{unicode-math}
 \usepackage{xcolor}
 
@@ -15,8 +15,8 @@ Numbers=OldStyle]{fbb}
 \setmathfont[AutoFakeBold]{Libertinus Math}
 % Sans-serif font: Gillius ADF (http://arkandis.tuxfamily.org/adffonts.html)
 \setsansfont[Numbers=OldStyle]{GilliusADF}
-% Monospaced font: inconsolata (https://www.ctan.org/pkg/inconsolata)
-\setmonofont[StylisticSet=1]{Inconsolatazi4}
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
+\fontspec{inconsolata}
 
 
 \begin{document}
@@ -25,7 +25,7 @@ Numbers=OldStyle]{fbb}
 
 {\large \noindent \textit{with Libertinus Math and Gillius ADF}}\\[5pt]
 
-\input{../../sample-text/sample-text-luatex.tex}
+\input{../../sample-text/sample-text-lualatex.tex}
 
 \end{document}
 

@@ -2,20 +2,25 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
+\usepackage{mathtools,amssymb,bm}
+\usepackage{xcolor}
 
-\usepackage{mathtools,amsfonts,amssymb,bm}
-
-
+% Serif font: Erewhon (https://ctan.org/pkg/erewhon)
 \usepackage[p,osf,scaled=.98,space]{erewhon}
-\usepackage[erewhon,vvarbb]{newtxmath}
-\renewcommand*\oldstylenums[1]{\textosf{#1}}
+% \renewcommand*\oldstylenums[1]{\textosf{#1}}
+% Math font: newtxmath with utopia option (https://www.ctan.org/pkg/newtx)
+\usepackage[utopia,vvarbb]{newtxmath}
+% Sans-serif font: Cabin (https://ctan.org/pkg/cabin)
+\usepackage[type1,scaled=.95]{cabin}
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
+\usepackage{inconsolata}
 
 
 \begin{document}
 
 {\LARGE \noindent A Sample of the Erewhon Font}\\
 
-{\large \noindent \textit{with Erewhon from newtxmath as math font}}\\[5pt]
+{\large \noindent \textit{with Utopia-style font from \texttt{newtxmath} and Cabin}}\\[5pt]
 
 \input{../../sample-text/sample-text-pdflatex.tex}
 

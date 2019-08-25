@@ -2,13 +2,15 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{microtype}
-
-\usepackage{mathtools,amsfonts,amssymb,bm}
-
+\usepackage{mathtools,amssymb,bm}
 \usepackage{xcolor}
 
-\usepackage[osf]{libertinus-type1}
+% Serif font: Libertinus Type 1 (https://ctan.org/pkg/libertinus-type1)
+\usepackage{libertinus-type1}
+% Math font: newtxmath with libertine option (https://www.ctan.org/pkg/newtx)
 \usepackage[libertine]{newtxmath}
+\useosf % Use old-style figures in text; must be called after loading math font
+% Monospaced font: Inconsolata (https://www.ctan.org/pkg/inconsolata)
 \usepackage{inconsolata}
 
 
@@ -16,7 +18,7 @@
 
 {\LARGE \noindent A Sample of the Libertinus Font}\\
 
-{\large \noindent \textit{with accompanying maths font from \texttt{newtxmath}}}\\[5pt]
+{\large \noindent \textit{with Libertine-style math font from \texttt{newtxmath} and Libertinus Sans}}\\[5pt]
 
 \input{../../sample-text/sample-text-pdflatex.tex}
 
