@@ -18,6 +18,7 @@ The other files in the repo contain the LaTeX code used to generate the samples 
 
 <p align="center">
   <img src="/img/fbb-libertinus.png?raw=true" width="700">
+  
   *fbb and Libertinus Math in LuaLaTeX*
 </p>
 
