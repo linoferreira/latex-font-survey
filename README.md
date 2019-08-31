@@ -16,8 +16,12 @@ The other files in the repo contain the LaTeX code used to generate the samples 
 
 ### Bembo
 
-<img src="/img/fbb-libertinus.png?raw=true" width="700" align="center"> *fbb and Libertinus Math in LuaLaTeX*
-
+<figure>
+  <img src="/img/fbb-libertinus.png?raw=true" width="700" align="middle">
+  <figcaption>
+    *fbb and Libertinus Math in LuaLaTeX*
+  </figcaption>
+</figure>
 
 Bembo is perhaps the oldest-looking typeface in this survey. Released by the Monotype Corporation in 1929, the font's roman style is based on a design by [Francesco Griffo](https://en.wikipedia.org/wiki/Francesco_Griffo) (an Italian punchcutter who created the first italic type) from c. 1495. [Aldus Manutius](https://en.wikipedia.org/wiki/Aldus_Manutius), one of the most important printers of his age, used the font to publish a short work by the cleric [Pietro Bembo](https://en.wikipedia.org/wiki/Pietro_Bembo), after whom Monotype's face is named.
 
