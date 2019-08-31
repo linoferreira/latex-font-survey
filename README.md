@@ -36,6 +36,12 @@ Edward Tufte's books use Eric Gill's Gill Sans, a widely-used sans font, as a sa
 
 ### Palatino
 
+<p align="center">
+  <img src="/img/newpxtext-euler.png?raw=true" width="700">
+  <br>
+  <i>`newpxtext` and Euler-VM in pdfLaTeX</i>
+</p>
+
 Palatino is one of the most widely-used and recognisable fonts of the XX century. Designed by [Hermann Zapf](https://en.wikipedia.org/wiki/Hermann_Zapf) and first released in 1949 by the Stempel foundry, Palatino was inspired by old-style Italian Renaissance types and influenced by Zapf's expertise in calligraphy. The font is named after [Giambattista Palatino](https://en.wikipedia.oreg/wiki/Giovanni_Battista_Palatino), one of the best-known calligraphers of the Renaissance period.
 
 Palatino was originally intended for use in headings and display printing and aimed to be clearly readable even on small sizes and poor-quality paper. Two distinctive features which contribute to its legibility are a larger x-height (the height of lower-case letters) and wider apertures when compared to other fonts in the Renaissance tradition.
@@ -47,11 +53,29 @@ Like Bembo, Palatino is a commercial font. Fortunately,  several clones of the o
 Unlike many fonts for which LaTeX packages are available, Palatino also has a
 freely-available OpenType clone with math support: the GUST project has developed the [TeX Gyre Pagella](http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella) font for which an OTF [math companion font](http://www.gust.org.pl/projects/e-foundry/tg-math#section-4) is conveniently provided as well. Unfortunately, there is no complete OpenType version of the Euler math font: only an abandoned port named [Neo Euler](https://github.com/khaledhosny/euler-otf) and developed by Khaled Hosny exists. Because of this, we do not provide a sample of an Euler font in LuaLaTeX. It is worth mentioning that there exists an alternative free OTF math font in Palatino-style called [Asana Math](https://www.ctan.org/tex-archive/fonts/Asana-Math/).
 
+<p align="center">
+  <img src="/img/tgpagella.png?raw=true" width="700">
+  <br>
+  <i>TeX Gyre Pagella in pdfLaTeX</i>
+</p>
+
 Finally, an interesting set of fonts based on Palatino (they are derived from [URW Palladio](https://en.wikipedia.org/wiki/Ghostscript)) but with a unique and distinctive character are the Kp-Fonts (the Johannes Kepler project -- no relation to Robert Slimbach's Kepler font) developed by [Christophe Caignaert](http://c.caignaert.free.fr/). This complete set of fonts (it contains roman, sans-serif, monospaced and math fonts) is available for use with LaTeX through the [`kpfonts`](https://ctan.org/pkg/kpfonts) package. In addition to old-style figures and true small caps, each of the fonts is also available in a *light* version. Even the default version of the roman font is, however, of a lighter weight than Palatino and in this respect is more similar to Aldus, a second font designed by Zapf which is similar to Palatino but intended for book use. For an example of the Aldus font in use in a TeX system, see the documentation of the [`fontspec` package](https://ctan.org/pkg/fontspec) which employs it as its main body font.
+
+<p align="center">
+  <img src="/img/kpfonts.png?raw=true" width="700">
+  <br>
+  <i>Kp-Fonts in pdfLaTeX</i>
+</p>
 
 
 
 ### Crimson
+
+<p align="center">
+  <img src="/img/cochineal.png?raw=true" width="700">
+  <br>
+  <i>Cochineal in pdfLaTeX</i>
+</p>
 
 Crimson is a free, open-source font designed by [Sebastian Kosch](https://aldusleaf.org/) in 2010. At the time, Kosch says, quality free text fonts were scarce and so Crimson was developed with the laudable goal of providing a "workhorse font for the masses." Crimson is an old-style font in the Renaissance tradition, although Kosch mentions as inspiration some of the most popular 20th century revivals of fonts from that period such as Robert Slimbach's Minion or Jan Tschichold's Sabon.
 
@@ -64,19 +88,31 @@ Even though it is a commercial font, Minion (in particular its OpenType version,
 
 ### Libertine
 
+<p align="center">
+  <img src="/img/libertinus.png?raw=true" width="700">
+  <br>
+  <i>Libertinus in LuaLaTeX</i>
+</p>
+
 The [Linux Libertine](http://libertine-fonts.org/) font family is perhaps the best-known example of an open-source font designed in the Internet era, and for good reason as it is an excellent font collection. While the three fonts we covered above are primarily inspired by old-style, Renaissance type from the 15th and 16th centuries, Libertine draws more on the 17th century Baroque style as well as the modern book fonts of the 19th and 20th centuries, and therefore has a more contemporary appearance than either Bembo or Crimson.
 
 An important reference in the design of Libertine, developed as part of the Libertine Open Fonts Project (started by Philipp H. Poll with the goal of releasing fonts under a GNU license) is Times New Roman and its predecessor, Times Roman. Despite the similarities between the two fonts, there are also some clear differences. In terms of dimension, Libertine has a smaller x-height than Times (which was optimised for readability at small sizes, having been originally designed for newspaper columns) and a smaller footprint overall. Another important difference is in the serifs, with Libertine's being flatter and less sharp compared with Times' crisp, angular and somewhat triangular ones (see [this interview](https://www.linux.com/news/linux-libertine-open-fonts-offers-free-times-roman-alternative) with Poll for a more complete discussion of the rational for the Libertine design and of the differences when compared to Times). The Libertine family includes not only the Libertine roman but also an accompanying sans-serif font, Linux Biolinum.
 
 The Libertine fonts are widely used in open-source software, for example being included in [Libre Office](https://www.libreoffice.org/) and having been used in the [Wikipedia logo](https://en.wikipedia.org/wiki/Linux_Libertine#Usage). In LaTeX, the fonts have been conveniently packaged in the [`libertine` package](https://www.ctan.org/pkg/libertine), with [`newtxmath`](https://www.ctan.org/pkg/newtx) providing an accompanying math font.
 
-In this survey, we use and showcase not the original Linux Libertine fonts but the [Libertinus family](https://github.com/alif-type/libertinus). This is a fork of the Libertine fonts by [Khaled Hosny](https://twitter.com/khaledghetas) which provides an OpenType math companion font (thus making Libertinus one of the very few font families with OTF math support) and fixes some of the bugs in the Libertine fonts. In addition to the roman, sans-serif and math versions, Libertinus also provides a monospaced font and a display font, as well as a semibold weight for the serif font; this level of completeness is one of its main strengths.
+In this survey, we use not the original Linux Libertine fonts but the [Libertinus family](https://github.com/alif-type/libertinus). This is a fork of the Libertine fonts by [Khaled Hosny](https://twitter.com/khaledghetas) which provides an OpenType math companion font (thus making Libertinus one of the very few font families with OTF math support) and fixes some of the bugs in the Libertine fonts. In addition to the roman, sans-serif and math versions, Libertinus also provides a monospaced font and a display font, as well as a semibold weight for the serif font; this level of completeness is one of its main strengths.
 
 A LaTeX package, [`libertinus`](https://ctan.org/pkg/libertinus), enables the easy use of Libertinus in Type 1 format (for pdfLaTeX) as well as OpenType. We provide a sample using both pdfLaTeX as well as LuaLaTeX. Libertinus Math is only available as an OpenType font and therefore for the pdfLaTeX example we use `newtxmath`.
 
 
 
 ### STIX
+
+<p align="center">
+  <img src="/img/stix-two.png?raw=true" width="700">
+  <br>
+  <i>STIX Two in LuaLaTeX</i>
+</p>
 
 The [Scientific and Technical Information eXchange (STIX)](https://www.stixfonts.org/) font creation project is an initiative by a consortium of technical publishing companies (which includes the American Mathematical Society and Elsevier, among others) to provide a comprehensive set of fonts for the scientific community. First proposed in 1995, STIX provides Unicode-based fonts with coverage of the Latin, Greek and Cyrillic alphabets as well as a math font.
 
@@ -88,6 +124,12 @@ While a Type 1 version of STIX Two has been made available specifically for use 
 
 ### Charter
 
+<p align="center">
+  <img src="/img/xcharter.png?raw=true" width="700">
+  <br>
+  <i>XCharter in pdfLaTeX</i>
+</p>
+
 The final two fonts in this brief survey have a distinctively more contemporary look. The first is Bitstream Charter, a transitional typeface designed by Matthew Carter in the late 1980s. Carter aimed to provide a suitable typeface for the low-resolution (300 dpi) printers of the time, and the result is a highly-legible font. In addition to a high x-height, one of the distinctive features of the font is its "economical style", with a minimum number of curves and more straight segments (see [this interview](https://www.myfonts.com/newsletters/cc/201310.html) with Carter for more details on Charter and his other work; Charter is also covered in Matthew Butterick's [Practical Typography](https://practicaltypography.com/) online book).
 
 While the resolution of current printers is higher than it was at the time (in fact, the evolution of technology at the time of the original design of the font meant that its simplified design was no longer technically necessary by the time Carter finished the design), the font is now very appropriate for today's screens (most of which have lower resolutions than 300 dpi) where many of our documents are likely to be read. One prominent example of the use of this font with LaTeX is as the [font chosen for the documentation](https://tex.stackexchange.com/questions/38213/what-font-configuration-is-used-by-microtype-documentation) of the [`microtype` package](https://ctan.org/pkg/microtype).
@@ -97,6 +139,12 @@ In 1992, Bitstream donated a basic version of Charter to the X Consortium, allow
 
 
 ### Utopia
+
+<p align="center">
+  <img src="/img/erewhon.png?raw=true" width="700">
+  <br>
+  <i>Erewhon in pdfLaTeX</i>
+</p>
 
 Utopia was designed by famed designer Robert Slimbach (current Principal Type Designer at Adobe) and first released in 1989. Inspired by transitional fonts such as [Baskerville](https://en.wikipedia.org/wiki/Baskerville) with their high contrast in stroke thickness, it also has more modern features such as a greater x-height and somewhat thicker, slab-like serifs.
 
