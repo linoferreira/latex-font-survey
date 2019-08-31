@@ -37,9 +37,9 @@ Edward Tufte's books use Eric Gill's Gill Sans, a widely-used sans font, as a sa
 ### Palatino
 
 <p align="center">
-  <img src="/img/newpxtext-euler.png?raw=true" width="700">
+  <img src="/img/tgpagella.png?raw=true" width="700">
   <br>
-  <i>`newpxtext` and Euler-VM in pdfLaTeX</i>
+  <i>TeX Gyre Pagella in pdfLaTeX</i>
 </p>
 
 Palatino is one of the most widely-used and recognisable fonts of the XX century. Designed by [Hermann Zapf](https://en.wikipedia.org/wiki/Hermann_Zapf) and first released in 1949 by the Stempel foundry, Palatino was inspired by old-style Italian Renaissance types and influenced by Zapf's expertise in calligraphy. The font is named after [Giambattista Palatino](https://en.wikipedia.oreg/wiki/Giovanni_Battista_Palatino), one of the best-known calligraphers of the Renaissance period.
@@ -54,9 +54,9 @@ Unlike many fonts for which LaTeX packages are available, Palatino also has a
 freely-available OpenType clone with math support: the GUST project has developed the [TeX Gyre Pagella](http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella) font for which an OTF [math companion font](http://www.gust.org.pl/projects/e-foundry/tg-math#section-4) is conveniently provided as well. Unfortunately, there is no complete OpenType version of the Euler math font: only an abandoned port named [Neo Euler](https://github.com/khaledhosny/euler-otf) and developed by Khaled Hosny exists. Because of this, we do not provide a sample of an Euler font in LuaLaTeX. It is worth mentioning that there exists an alternative free OTF math font in Palatino-style called [Asana Math](https://www.ctan.org/tex-archive/fonts/Asana-Math/).
 
 <p align="center">
-  <img src="/img/tgpagella.png?raw=true" width="700">
+  <img src="/img/newpxtext-euler.png?raw=true" width="700">
   <br>
-  <i>TeX Gyre Pagella in pdfLaTeX</i>
+  <i>New PX and Euler-VM in pdfLaTeX</i>
 </p>
 
 Finally, an interesting set of fonts based on Palatino (they are derived from [URW Palladio](https://en.wikipedia.org/wiki/Ghostscript)) but with a unique and distinctive character are the Kp-Fonts (the Johannes Kepler project -- no relation to Robert Slimbach's Kepler font) developed by [Christophe Caignaert](http://c.caignaert.free.fr/). This complete set of fonts (it contains roman, sans-serif, monospaced and math fonts) is available for use with LaTeX through the [`kpfonts`](https://ctan.org/pkg/kpfonts) package. In addition to old-style figures and true small caps, each of the fonts is also available in a *light* version. Even the default version of the roman font is, however, of a lighter weight than Palatino and in this respect is more similar to Aldus, a second font designed by Zapf which is similar to Palatino but intended for book use. For an example of the Aldus font in use in a TeX system, see the documentation of the [`fontspec` package](https://ctan.org/pkg/fontspec) which employs it as its main body font.
