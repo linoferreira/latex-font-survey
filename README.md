@@ -1,14 +1,34 @@
-# Survey of fonts for use in LaTeX
+# Survey of fonts for use with LaTeX
 
-This repository contains samples of a few font families (roman, sans-serif and maths fonts) for use with LaTeX systems.
+*This repository contains samples of a few of my favourite fonts for use with LaTeX systems.*
 
-LaTeX is often associated with its default fonts, Donald Knuth's [Computer Modern](https://en.wikipedia.org/wiki/Computer_Modern) typefaces. While these fonts are excellent, they have become so ubiquitous in the scientific community that many LaTeX users, myself included, have sought to use other fonts for their documents. As a result, a plethora of font packages and even OpenType-compatible engines (XeTeX and LuaTeX) have emerged in the past couple of decades.
+#### Table of Contents
+[Introduction](#introduction)  
+[Fonts](#fonts)  
+&nbsp;&nbsp; [Bembo](#bembo)  
+&nbsp;&nbsp; [Palatino](#palatino)  
+&nbsp;&nbsp; [Crimson](#crimson)  
+&nbsp;&nbsp; [Libertine](#libertine)  
+&nbsp;&nbsp; [STIX](#stix)  
+&nbsp;&nbsp; [Charter](#charter)  
+&nbsp;&nbsp; [Utopia](#utopia)  
+[Sample text](#sample-text)  
+[Setup](#setup)  
 
-Some time ago, I set out to explore this extensive set of LaTeX font options in order to find a smaller group which I could make frequent use of for my typesetting and become more acquainted with as a result. I wanted not only to identify some good font choices (well-designed and well-supported fonts which can be a good fit for the content of the documents I type) but also to write down something about the history, character and current significance of the fonts in the typographical or LaTeX community. My aim was also to produce some short samples of the fonts in use both for ease of comparison and reference as well as for quick access to the package setups.
 
-The list of fonts below is by no means exhaustive: it is simply a list of fonts which are commonly used with LaTeX and which I personally like.
+## Introduction
 
-The other files in the repo contain the LaTeX code used to generate the samples included below, as well as the pdf files from which they were taken.
+TeX and related systems (in which LaTeX is included) are often associated with their default fonts, Donald Knuth's [Computer Modern](https://en.wikipedia.org/wiki/Computer_Modern) typefaces. While these fonts are excellent, they have become so ubiquitous in the scientific community that many LaTeX users have sought alternative fonts for their documents. As a result, a plethora of font packages and even OpenType-compatible engines (XeLaTeX and LuaLaTeX) have emerged in the past 20 years.
+
+A few months ago, I set out to explore this extensive set of LaTeX font options. My goal was to select a small group of high-quality, comprehensive fonts which I could later choose from when typesetting different documents. As I moved forward with my search, I also became interested in the history, character and rationale behind the design of different fonts and this led me to write some descriptive notes on each of my favourites.
+
+This ReadMe file contains these notes. In the paragraphs below, I highlight and give a brief description of seven fonts which I personally like: Bembo, Palatino, Crimson, Libertine, STIX, Charter and Utopia. I also provide a small sample of each font (containing both text and maths) so that the different choices can be easily assessed and compared. A longer sample for each font (code and resulting pdf) is provided in the various folders in the repository.
+
+When using LaTeX, three types of fonts can be selected and are commonly used: a *roman* (or serif) font which is normally employed for body text (and which should have maths support), a *sans-serif* font (sometimes used for headers) and a *monospaced* (or typewriter) font. When selecting a font to use for a document, it is therefore important to consider whether the font supports mathematical characters (at least if we will be typing some maths!) and to also choose an appropriate sans-serif font to accompany it (the monospaced font is usually allowed to differ more visibly from the roman).
+
+While this survey focuses on serif fonts (which are the usual choice for longer documents such as articles, although sans-serifs have become more popular in recent years), I have also selected accompanying sans-serif fonts for each of the seven fonts below (all of which have maths support of some form or another). As a monospaced font, I chose [Raph Levien](https://raph.levien.com)'s excellent [Inconsolata](https://en.wikipedia.org/wiki/Inconsolata), a popular choice not only in the TeX world but also for text editors.
+
+As mentioned above, engines such as LuaLaTeX make possible the use of OpenType fonts in LaTeX. While Type 1 fonts (which often have dedicated LaTeX packages) are the simplest to setup and are available on most distributions (which makes them a good choice when co-writing documents, for example), OpenType fonts are more complete and customisable in their options and represent the best current standard in digital typography. Whenever possible (i.e. when a font is provided in Type 1 in a LaTeX package and also available as OpenType) I provide two samples, one for each configuration. In the remaining cases, I use whichever format is available. I give further details on the configuration used for producing the samples as well as on the sources of the sample text in the final sections of this file. And now on to the fonts!
 
 
 
@@ -24,13 +44,21 @@ The other files in the repo contain the LaTeX code used to generate the samples 
 
 Bembo is perhaps the oldest-looking typeface in this survey. Released by the Monotype Corporation in 1929, the font's roman style is based on a design by [Francesco Griffo](https://en.wikipedia.org/wiki/Francesco_Griffo) (an Italian punchcutter who created the first italic type) from c. 1495. [Aldus Manutius](https://en.wikipedia.org/wiki/Aldus_Manutius), one of the most important printers of his age, used the font to publish a short work by the cleric [Pietro Bembo](https://en.wikipedia.org/wiki/Pietro_Bembo), after whom Monotype's face is named.
 
-Bembo remains one of the most popular book fonts, having been used by publishing houses such as Penguin Books or the Oxford University Press. While its old-style appearance may make it unsuitable for some documents (perhaps short scientific articles, for example), Bembo has received some attention from the LaTeX community. This is due in part to the work of [Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte), known among other things for his writings on data visualisation, whose remarkably-well-designed [books](https://www.edwardtufte.com/tufte/books_vdqi) make use of Bembo as their body text font. While these books were not composed in a TeX system, they have inspired the development of the [`tufte-latex`](https://ctan.org/pkg/tufte-latex) document class to produce similarly designed books or handouts.
+Bembo remains one of today's most popular book fonts, having been used by publishing houses such as Penguin Books or the Oxford University Press. While its old-style appearance may make it unsuitable for some documents, Bembo has received some attention from the LaTeX community. This is due in part to the work of [Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte), known among other things for his writings on data visualisation, whose remarkably-well-designed [books](https://www.edwardtufte.com/tufte/books_vdqi) use Bembo as their body text font. While these books were not composed in a TeX system, they have inspired the development of the [`tufte-latex`](https://ctan.org/pkg/tufte-latex) document class to produce similarly designed books as well as handouts.
 
-Monotype's Bembo is a commercial font, although a web-font version of ET Book, the font used in Tufte's books, has been made [available for free](https://edwardtufte.github.io/et-book/) by Tufte himself. However, a free alternative named [Cardo](http://scholarsfonts.net/cardofnt.html) and also based on the typeface cut for Aldus Manutius has been developed by [David J. Perry](http://scholarsfonts.net/index.html). Designed with the needs of classicists and linguists in mind, Cardo has been modified and extended by [Michael Sharpe](http://math.ucsd.edu/~msharpe/) and made easily available for use in LaTeX through the [`fbb` package](https://ctan.org/pkg/fbb). fbb is available both in an OpenType and a Type 1 version, suitable for use with OTF-compatible systems such as LuaLaTeX as well as pdfLaTeX.
+[<img src="https://assets.fontsinuse.com/static/use-media-items/46/45399/upto-700xauto/5865cc1b/@2x/tvdoqi.jpeg" height="300"/>](https://assets.fontsinuse.com/static/use-media-items/46/45399/upto-700xauto/5865cc1b/@2x/tvdoqi.jpeg)
+[<img src="https://assets.fontsinuse.com/static/use-media-items/46/45201/upto-700xauto/5865cc1b/@2x/Columbia%20disaster.gif" height="300"/>](https://assets.fontsinuse.com/static/use-media-items/46/45201/upto-700xauto/5865cc1b/@2x/Columbia%20disaster.gif)
+[<img src="https://assets.fontsinuse.com/static/use-media-items/46/45398/upto-700xauto/5865cc1b/@2x/eicover.jpeg" height="300"/>](https://assets.fontsinuse.com/static/use-media-items/46/45398/upto-700xauto/5865cc1b/@2x/eicover.jpeg)
+<p align="center">
+  <i>Books by Edward Tufte (click to enlarge). Source: <a href="https://fontsinuse.com/uses/14727/edward-tufte-books">Fonts In Use</a>
+  </i>
+</p>
 
-While no math companion font is available for fbb, the package's author suggest the use of [`newtxmath`](https://www.ctan.org/pkg/newtx) with the `libertine` option in pdfTeX. In LuaLaTeX, we instead use [Libertinus](https://github.com/alif-type/libertinus), an OpenType font with math support developed by Khaled Hosny and covered below.
+Monotype's Bembo is a commercial font, although a web-font version of ET Book, the font used in Tufte's books, has been made [available for free](https://edwardtufte.github.io/et-book/) by Tufte himself. A more complete free alternative is [Cardo](http://scholarsfonts.net/cardofnt.html), developed by [David J. Perry](http://scholarsfonts.net/index.html) and also based on the typeface cut for Aldus Manutius. Designed with the needs of classicists and linguists in mind, Cardo has been modified and extended by [Michael Sharpe](http://math.ucsd.edu/~msharpe/) and made easily available for use in LaTeX through the [`fbb` package](https://ctan.org/pkg/fbb). fbb is available both in OpenType and Type 1 formats, suitable for use with OTF-compatible systems such as LuaLaTeX as well as pdfLaTeX.
 
-Edward Tufte's books use Eric Gill's Gill Sans, a widely-used sans font, as a sans-serif companion. Like Bembo, Gill Sans is commercial and because of this we use [Gillius ADF](https://arkandis.tuxfamily.org/adffonts.html), a free font inspired by Gill Sans available in OpenType format, as an alternative. The package [`gillius`](https://ctan.org/tex-archive/fonts/gillius) provides LaTeX support for both pdfLaTeX as well as LuaLaTeX and XeLaTeX.
+While no maths companion font is available for fbb, the package's author suggest the use of [`newtxmath`](https://www.ctan.org/pkg/newtx) with the `libertine` option in pdfLaTeX. In LuaLaTeX, we instead use [Libertinus](https://github.com/alif-type/libertinus), an OpenType font with math support developed by Khaled Hosny and covered below.
+
+Edward Tufte's books use Eric Gill's Gill Sans, a widely-used sans font, as a sans-serif companion. Like Bembo, Gill Sans is commercial and because of this we use [Gillius ADF](https://arkandis.tuxfamily.org/adffonts.html), a free font inspired by Gill Sans and available in OpenType format, as an alternative. The package [`gillius`](https://ctan.org/tex-archive/fonts/gillius) provides LaTeX support for pdfLaTeX as well as LuaLaTeX and XeLaTeX.
 
 
 
@@ -46,7 +74,15 @@ Palatino is one of the most widely-used and recognisable fonts of the XX century
 
 Palatino was originally intended for use in headings and display printing and aimed to be clearly readable even on small sizes and poor-quality paper. Two distinctive features which contribute to its legibility are a larger x-height (the height of lower-case letters) and wider apertures when compared to other fonts in the Renaissance tradition.
 
-In the TeX universe, Palatino-style fonts are perhaps the most commonly used fonts after the default Computer Modern (CM) Roman. However, the close relation between Palatino and TeX goes beyond its mere frequent use with the typesetting system. In fact, Donald Knuth discussed the design of CM Roman with Herman Zapf ([see photo](https://twitter.com/hardmaru/status/1074964265063182337)), who would later create the [AMS Euler math typeface](https://en.wikipedia.org/wiki/AMS_Euler) with Knuth's assistance under commission by the American Mathematical Society (AMS). Zapf was also an [honorary member of the board of the TeX Users Group](http://tex-talk.net/2015/06/thank-you-hermann-zapf/) since 1980 with the title of "Wizard of Fonts."
+In the TeX universe, Palatino-style fonts are perhaps the most commonly used fonts after the default Computer Modern (CM) Roman. However, the close relation between Palatino and TeX goes beyond its mere frequent use with the typesetting system. In fact, Donald Knuth discussed the design of CM Roman with Herman Zapf (see the photo below), who would later create the [AMS Euler math typeface](https://en.wikipedia.org/wiki/AMS_Euler) with Knuth's assistance under commission by the American Mathematical Society (AMS). Zapf was also an [honorary member of the board of the TeX Users Group](http://tex-talk.net/2015/06/thank-you-hermann-zapf/) since 1980 with the title of "Wizard of Fonts."
+
+<p align="center">
+  <a href="https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH4/merlin_148056612_01f85696-6910-4932-a2ce-f95c422ed922-superJumbo.jpg?quality=90&auto=webp">
+  <img src="https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH4/merlin_148056612_01f85696-6910-4932-a2ce-f95c422ed922-jumbo.jpg?quality=90&auto=webp?raw=true" width="450"/>
+  </a>
+  <br>
+  <i>Donald Knuth (left) and Herman Zapf (right) (click to enlarge). Source: Bettmann, via Getty Images, via NY Times</i>
+</p>
 
 Like Bembo, Palatino is a commercial font. Fortunately,  several clones of the original font have been made available for use in LaTeX over the years. In pdfLaTeX, we use the text font provided by the [`newpx` package](https://www.ctan.org/pkg/newpx). As a math font, we use both the math companion font provided by the same package as well as an Euler-like font provided by the [`eulervm` package](https://ctan.org/pkg/eulervm). As you can see on the sample below, the Euler font has a distinctive look as a math font, with upright letters instead of the usual italics. In this respect it aims to reflect the typical handwriting of mathematicians on the blackboard.
 
@@ -97,6 +133,14 @@ Even though it is a commercial font, Minion (in particular its OpenType version,
 The [Linux Libertine](http://libertine-fonts.org/) font family is perhaps the best-known example of an open-source font designed in the Internet era, and for good reason as it is an excellent font collection. While the three fonts we covered above are primarily inspired by old-style, Renaissance type from the 15th and 16th centuries, Libertine draws more on the 17th century Baroque style as well as the modern book fonts of the 19th and 20th centuries, and therefore has a more contemporary appearance than either Bembo or Crimson.
 
 An important reference in the design of Libertine, developed as part of the Libertine Open Fonts Project (started by Philipp H. Poll with the goal of releasing fonts under a GNU license) is Times New Roman and its predecessor, Times Roman. Despite the similarities between the two fonts, there are also some clear differences. In terms of dimension, Libertine has a smaller x-height than Times (which was optimised for readability at small sizes, having been originally designed for newspaper columns) and a smaller footprint overall. Another important difference is in the serifs, with Libertine's being flatter and less sharp compared with Times' crisp, angular and somewhat triangular ones (see [this interview](https://www.linux.com/news/linux-libertine-open-fonts-offers-free-times-roman-alternative) with Poll for a more complete discussion of the rational for the Libertine design and of the differences when compared to Times). The Libertine family includes not only the Libertine roman but also an accompanying sans-serif font, Linux Biolinum.
+
+<p align="center">
+  <a href="http://blog.osp.kitchen/images/uploads/libertinagevstimes.png">
+  <img src="http://blog.osp.kitchen/images/uploads/libertinagevstimes.png?raw=true" width="600"/>
+  </a>
+  <br>
+  <i>Times New Roman (top) and Linux Libertine (bottom) (click to enlarge). Source: <a href="http://blog.osp.kitchen/">osp blog</a></i>
+</p>
 
 The Libertine fonts are widely used in open-source software, for example being included in [Libre Office](https://www.libreoffice.org/) and having been used in the [Wikipedia logo](https://en.wikipedia.org/wiki/Linux_Libertine#Usage). In LaTeX, the fonts have been conveniently packaged in the [`libertine` package](https://www.ctan.org/pkg/libertine), with [`newtxmath`](https://www.ctan.org/pkg/newtx) providing an accompanying math font.
 
