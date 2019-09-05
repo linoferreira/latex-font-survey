@@ -136,9 +136,9 @@ One of the characteristics of Crimson is its (coincidental) similarity to Slimba
 Even though it is a commercial font, Minion (in particular its OpenType version, MinionPro) has gained popularity with LaTeX users as it comes bundled with some Adobe products and is thus available by default on some systems (the legality of using the font which comes with Adobe Reader is [dubious](https://tex.stackexchange.com/questions/17556/license-of-the-minion-pro-fonts-that-came-with-adobe-reader), however). While Minion does not provide math support, an (also commercial) math companion font, [Minion Math](http://www.typoma.com/en/fonts.html) by Johannes Küster, is also available.
 
 <p align="center">
-  <img src="/img/comparisons/minion-screenshot.png?raw=true">
+  <img src="/img/comparisons/minion-screenshot.png?raw=true" width="700">
   
-  <img src="/img/comparisons/crimson-screenshot.png?raw=true">
+  <img src="/img/comparisons/crimson-screenshot.png?raw=true" width="700">
   <br>
   <i>Minion Pro Regular (top) and Crimson Text (bottom). Source: Adobe Fonts and Google Fonts</i>
 </p>
