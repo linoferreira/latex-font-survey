@@ -65,8 +65,6 @@ Bembo remains one of today's most popular book fonts, having been used by publis
 </i>
 </p>
 
-<a id='4g3u2-0aTcRfP5TxvaJ7Ag' class='gie-single' href='http://www.gettyimages.pt/detail/515128854' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'4g3u2-0aTcRfP5TxvaJ7Ag',sig:'HiNh8WQPigjqPXuHklLqjiuC2pW9d-a6M_u58NCNNCQ=',w:'594px',h:'405px',items:'515128854',caption: true ,tld:'pt',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
-
 Monotype's Bembo is a commercial font, although a web-font version of ET Book, the font used in Tufte's books, has been made [available for free](https://edwardtufte.github.io/et-book/) by Tufte himself. A more complete free alternative is [Cardo](http://scholarsfonts.net/cardofnt.html), developed by [David J. Perry](http://scholarsfonts.net/index.html) and also based on the typeface cut for Aldus Manutius. Designed with the needs of classicists and linguists in mind, Cardo has been modified and extended by [Michael Sharpe](http://math.ucsd.edu/~msharpe/) and made easily available for use in LaTeX through the [`fbb` package](https://ctan.org/pkg/fbb). fbb is available both in OpenType and Type 1 formats, suitable for use with OTF-compatible systems such as LuaLaTeX as well as pdfLaTeX.
 
 While no maths companion font is available for fbb, the package's author suggest the use of [`newtxmath`](https://www.ctan.org/pkg/newtx) with the `libertine` option in pdfLaTeX. In LuaLaTeX, we instead use [Libertinus](https://github.com/alif-type/libertinus), an OpenType font with math support developed by Khaled Hosny and covered below.
@@ -90,11 +88,11 @@ Palatino was originally intended for use in headings and display printing and ai
 In the TeX universe, Palatino-style fonts are perhaps the most commonly used fonts after the default Computer Modern (CM) Roman. However, the close relation between Palatino and TeX goes beyond its mere frequent use with the typesetting system. In fact, Donald Knuth discussed the design of CM Roman with Herman Zapf (see the photo below), who would later create the [AMS Euler math typeface](https://en.wikipedia.org/wiki/AMS_Euler) with Knuth's assistance under commission by the American Mathematical Society (AMS). Zapf was also an [honorary member of the board of the TeX Users Group](http://tex-talk.net/2015/06/thank-you-hermann-zapf/) since 1980 with the title of "Wizard of Fonts."
 
 <p align="center">
-  <a href="https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH4/merlin_148056612_01f85696-6910-4932-a2ce-f95c422ed922-superJumbo.jpg?quality=90&auto=webp">
-  <img src="https://static01.nyt.com/images/2018/12/18/science/18SCI-KNUTH4/merlin_148056612_01f85696-6910-4932-a2ce-f95c422ed922-jumbo.jpg?quality=90&auto=webp?raw=true" width="450"/>
+  <a href="https://media.gettyimages.com/photos/donald-knuth-a-stanford-university-professor-discusses-his-new-method-picture-id515128854?s=2048x2048">
+  <img src="https://media.gettyimages.com/photos/donald-knuth-a-stanford-university-professor-discusses-his-new-method-picture-id515128854?s=2048x2048" width="550"/>
   </a>
   <br>
-  <i>Donald Knuth (left) and Herman Zapf (right) (click to enlarge). Source: Bettmann, via Getty Images, via NY Times</i>
+  <i>Donald Knuth (left) and Herman Zapf (right) (click to enlarge). Source: Bettmann, via Getty Images</i>
 </p>
 
 Like Bembo, Palatino is a commercial font. Fortunately,  several clones of the original font have been made available for use in LaTeX over the years. In pdfLaTeX, we use the text font provided by the [`newpx` package](https://www.ctan.org/pkg/newpx). As a math font, we use both the math companion font provided by the same package as well as an Euler-like font provided by the [`eulervm` package](https://ctan.org/pkg/eulervm). As you can see on the sample below, the Euler font has a distinctive look as a math font, with upright letters instead of the usual italics. In this respect it aims to reflect the typical handwriting of mathematicians on the blackboard.
@@ -108,7 +106,7 @@ freely-available OpenType clone with math support: the GUST project has develope
   <i>New PX and Euler-VM in pdfLaTeX</i>
 </p>
 
-Finally, an interesting set of fonts based on Palatino (they are derived from [URW Palladio](https://en.wikipedia.org/wiki/Ghostscript)) but with a unique and distinctive character are the Kp-Fonts (the Johannes Kepler project -- no relation to Robert Slimbach's Kepler font) developed by [Christophe Caignaert](http://c.caignaert.free.fr/). This complete set of fonts (it contains roman, sans-serif, monospaced and math fonts) is available for use with LaTeX through the [`kpfonts`](https://ctan.org/pkg/kpfonts) package. In addition to old-style figures and true small caps, each of the fonts is also available in a *light* version. Even the default version of the roman font is, however, of a lighter weight than Palatino and in this respect is more similar to Aldus, a second font designed by Zapf which is similar to Palatino but intended for book use. For an example of the Aldus font in use in a TeX system, see the documentation of the [`fontspec` package](https://ctan.org/pkg/fontspec) which employs it as its main body font.
+Finally, an interesting set of fonts based on Palatino (they are derived from [URW Palladio](https://en.wikipedia.org/wiki/Ghostscript)) but with a unique and distinctive character is Kp-Fonts (the Johannes Kepler project -- no relation to Robert Slimbach's Kepler font) developed by [Christophe Caignaert](http://c.caignaert.free.fr/). This complete set of fonts (it contains roman, sans-serif, monospaced and math fonts) is available for use with LaTeX through the [`kpfonts`](https://ctan.org/pkg/kpfonts) package. In addition to old-style figures and true small caps, each of the fonts is also available in a *light* version. Even the default version of the roman font is, however, of a lighter weight than Palatino and in this respect is more similar to Aldus, a second font designed by Zapf which is similar to Palatino but intended for book use. For an example of the Aldus font in use in a TeX system, see the documentation of the [`fontspec` package](https://ctan.org/pkg/fontspec) which employs it as its main body font.
 
 <p align="center">
   <img src="/img/kpfonts.png?raw=true" width="700">
@@ -132,6 +130,14 @@ For LaTeX, [Michael Sharpe](http://math.ucsd.edu/~msharpe/)'s [`cochineal`](http
 
 One of the characteristics of Crimson is its (coincidental) similarity to Slimbach's Minion font (although with smaller x-height and more elaborate details), which has become a standard choice for book typesetting since its first release in 1990 (for example, it is main body-text font used in Robert Bringhurst's classic text, [*The Elements of Typographic Style*](https://en.wikipedia.org/wiki/The_Elements_of_Typographic_Style).
 Even though it is a commercial font, Minion (in particular its OpenType version, MinionPro) has gained popularity with LaTeX users as it comes bundled with some Adobe products and is thus available by default on some systems (the legality of using the font which comes with Adobe Reader is [dubious](https://tex.stackexchange.com/questions/17556/license-of-the-minion-pro-fonts-that-came-with-adobe-reader), however). While Minion does not provide math support, an (also commercial) math companion font, [Minion Math](http://www.typoma.com/en/fonts.html) by Johannes Küster, is also available.
+
+<p align="center">
+  <img src="/img/comparisons/minion-screenshot.png?raw=true" width="700">
+  
+  <img src="/img/comparisons/crimson-screenshot.png?raw=true" width="700">
+  <br>
+  <i>Minion Pro Regular (top) and Crimson Text (bottom). Source: Adobe Fonts and Google Fonts</i>
+</p>
 
 
 
@@ -174,6 +180,14 @@ A LaTeX package, [`libertinus`](https://ctan.org/pkg/libertinus), enables the ea
 The [Scientific and Technical Information eXchange (STIX)](https://www.stixfonts.org/) font creation project is an initiative by a consortium of technical publishing companies (which includes the American Mathematical Society and Elsevier, among others) to provide a comprehensive set of fonts for the scientific community. First proposed in 1995, STIX provides Unicode-based fonts with coverage of the Latin, Greek and Cyrillic alphabets as well as a math font.
 
 Originally designed to be compatible with Times fonts, the most recent (2.0) version of the fonts goes beyond mere compatibility to provide ["a fresh take"](https://github.com/stipub/stixfonts) on Times which aims to address some of its shortcomings and expand its typographic features. A quote from type foundry [Tiro Typeworks](https://tiro.com/) available on the project's [GitHub repository](https://github.com/stipub/stixfonts) explains how, for the design of STIX Two, the metal specimens used for pre-digital printing served as the basis for this redesign of the font. Compared with Times New Roman, the most visible difference in STIX Two is the greater x-height, which gives the font a more modern appearance in line with more contemporary typefaces such as Charter and Utopia, covered below.
+
+<p align="center">
+  <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Times_and_STIX.png/1024px-Times_and_STIX.png">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Times_and_STIX.png/1024px-Times_and_STIX.png?raw=true" width="500"/>
+  </a>
+  <br>
+  <i>Times New Roman (top) and STIX Two (bottom) (click to enlarge). Source: Blythwood via Wikimedia. License: CC BY-SA 4.0</i>
+</p>
 
 While a Type 1 version of STIX Two has been made available specifically for use by LaTeX users who do not use OpenType-compatible TeX engines, the fonts are primarily and originally OpenType. As such, we provide a sample of this font using only LuaTeX. It is worth emphasising how this is one of only a very small number of free OpenType math fonts (with Libertinus and the TeX Gyre fonts being the main alternatives). Finally, we will mention that those looking for a more exact Times New Roman clone with OpenType math support may be interested in the [TeX Gyre Termes](http://www.gust.org.pl/projects/e-foundry/tex-gyre/termes) font.
 
@@ -221,6 +235,11 @@ For the maths on the second page, the first two paragraphs and corresponding for
 
 ## Setup
 
-Since the LaTeX engine does not support the use of OpenType fonts, we use LuaTeX (XeTeX could be used instead) together with the [`fontspec` package](https://ctan.org/pkg/fontspec). We also load the [`mathtools`](https://www.ctan.org/pkg/mathtools) package (an extension of the classic [`amsmath`](https://www.ctan.org/pkg/amsmath) which provides additional symbols and tools for mathematical typesetting) as well as the [`unicode-math`](https://www.ctan.org/pkg/unicode-math) package which allows the use of math symbols through the Unicode standard. Finally, we use the [`microtype`](https://ctan.org/pkg/microtype) package which enables microtypography features (such as character protrusion and font expansion).
+In making the different font sample documents, I tried to keep the LaTeX setup as simple as possible. My aim was to have a minimal working preamble that I could then copy in the future whenever I wanted to use a particular font.
 
+In pdfLaTeX, I set the default font encoding to T1 using the standard [`fontenc` package](https://www.ctan.org/pkg/fontenc). Maths fonts are then setup using [`mathtools`](https://ctan.org/pkg/mathtools?lang=en) (which loads the [`amsmath` package](https://ctan.org/pkg/amsmath) and adds new features such as two-line fractions, prescripts, etc.), `amssymb` for additional symbols and the [`bm` package](https://ctan.org/pkg/bm) for bold weight in math mode. In LuaLaTeX, [`unicode-math`](https://ctan.org/pkg/unicode-math) is used to provide unicode maths support (this makes `bm` unnecessary as `unicode-math` has its own boldface command, `symbf`).
+
+In both pdfLaTeX and LuaLaTeX, the excellent [`microtype` package](https://ctan.org/pkg/microtype) is used to enable micro-typography features such as character protrusion and font expansion (see [here](http://www.khirevich.com/latex/microtype/) for a helpful description of the package's features). Finally, [`xcolor`](https://ctan.org/pkg/xcolor) is used to display the sans-serif paragraph in grey.
+
+Regarding the setup of the fonts, I use the default options given in the documentation of the different font packages whenever possible.
 
