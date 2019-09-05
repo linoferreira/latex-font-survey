@@ -46,12 +46,23 @@ Bembo is perhaps the oldest-looking typeface in this survey. Released by the Mon
 
 Bembo remains one of today's most popular book fonts, having been used by publishing houses such as Penguin Books or the Oxford University Press. While its old-style appearance may make it unsuitable for some documents, Bembo has received some attention from the LaTeX community. This is due in part to the work of [Edward Tufte](https://en.wikipedia.org/wiki/Edward_Tufte), known among other things for his writings on data visualisation, whose remarkably-well-designed [books](https://www.edwardtufte.com/tufte/books_vdqi) use Bembo as their body text font. While these books were not composed in a TeX system, they have inspired the development of the [`tufte-latex`](https://ctan.org/pkg/tufte-latex) document class to produce similarly designed books as well as handouts.
 
-[<img src="https://assets.fontsinuse.com/static/use-media-items/46/45399/upto-700xauto/5865cc1b/@2x/tvdoqi.jpeg" height="300"/>](https://assets.fontsinuse.com/static/use-media-items/46/45399/upto-700xauto/5865cc1b/@2x/tvdoqi.jpeg)
-[<img src="https://assets.fontsinuse.com/static/use-media-items/46/45201/upto-700xauto/5865cc1b/@2x/Columbia%20disaster.gif" height="300"/>](https://assets.fontsinuse.com/static/use-media-items/46/45201/upto-700xauto/5865cc1b/@2x/Columbia%20disaster.gif)
-[<img src="https://assets.fontsinuse.com/static/use-media-items/46/45398/upto-700xauto/5865cc1b/@2x/eicover.jpeg" height="300"/>](https://assets.fontsinuse.com/static/use-media-items/46/45398/upto-700xauto/5865cc1b/@2x/eicover.jpeg)
 <p align="center">
-  <i>Books by Edward Tufte (click to enlarge). Source: <a href="https://fontsinuse.com/uses/14727/edward-tufte-books">Fonts In Use</a>
-  </i>
+<a href="https://assets.fontsinuse.com/static/use-media-items/46/45399/upto-700xauto/5865cc1b/@2x/tvdoqi.jpeg">
+<img src="https://assets.fontsinuse.com/static/use-media-items/46/45399/upto-700xauto/5865cc1b/@2x/tvdoqi.jpeg" height="350"/>
+</a>
+
+<a href="https://assets.fontsinuse.com/static/use-media-items/46/45201/upto-700xauto/5865cc1b/@2x/Columbia%20disaster.gif">
+<img src="https://assets.fontsinuse.com/static/use-media-items/46/45201/upto-700xauto/5865cc1b/@2x/Columbia%20disaster.gif" height="350"/>
+</a>
+
+<a href="https://assets.fontsinuse.com/static/use-media-items/46/45398/upto-700xauto/5865cc1b/@2x/eicover.jpeg">
+<img src="https://assets.fontsinuse.com/static/use-media-items/46/45398/upto-700xauto/5865cc1b/@2x/eicover.jpeg" height="350"/>
+</a>
+</p>
+<p align="center">
+<i>Books by Edward Tufte (click to enlarge). Source: 
+<a href="https://fontsinuse.com/uses/14727/edward-tufte-books">Fonts In Use</a>
+</i>
 </p>
 
 Monotype's Bembo is a commercial font, although a web-font version of ET Book, the font used in Tufte's books, has been made [available for free](https://edwardtufte.github.io/et-book/) by Tufte himself. A more complete free alternative is [Cardo](http://scholarsfonts.net/cardofnt.html), developed by [David J. Perry](http://scholarsfonts.net/index.html) and also based on the typeface cut for Aldus Manutius. Designed with the needs of classicists and linguists in mind, Cardo has been modified and extended by [Michael Sharpe](http://math.ucsd.edu/~msharpe/) and made easily available for use in LaTeX through the [`fbb` package](https://ctan.org/pkg/fbb). fbb is available both in OpenType and Type 1 formats, suitable for use with OTF-compatible systems such as LuaLaTeX as well as pdfLaTeX.
